@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF  Dashboard</title>
+  <content type="text/css">
+  </content type>
+  
+  <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+  <!--<link rel="stylesheet" href="build/pdf_viewer.css">-->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Recent Documents</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+  <!--  <div>
+      <img src="wallpaperflare.com_wallpaper (1).jpg" alt="User Avatar" id="image">
+      <span id="name">Welcome Anirudh</span>
+    </div>-->
+  </header>
+  
+  <span class="page-info">
+    Page <span id="page-num"></span> of <span id="page-count"></span>
+</span>
+
+  <div id="document-viewer">
+<canvas id="pdf-render"></canvas>
+  </div>
+
+    <div id="controls">
+      <button id="previousButton">Previous Page</button>
+      <button id="nextButton">Next Page</button>
+      <% if (isAdminUser()) { %>
+        <!-- Show the download button for admin users -->
+        <button id="downloadButton">Download File</button>
+      <% } %>
+      <button id="delete">Delete</button>
+    </div>
+
+
+  <aside id="document-management">
+    <div>
+      <button id="open-document-button">Open Document</button>
+      <ul>
+        <li><a href="" >Document 1</a></li>
+        <li><a href="" >Document 2</a></li>
+        <li><a href="" >Document 3</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <footer>
+    <p>&copy; 2023 PDF Reader Dashboard. All rights reserved.</p>
+  </footer>
+ <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+  <script src="js/dashboard.js"></script>
+  
+</body>
+</html>
+

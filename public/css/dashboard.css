@@ -1,0 +1,99 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(65, 8, 250);
+  }
+  nav ul {
+    list-style-type:circle;
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    transition: yellow 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: yellow;
+    color: black;
+  }
+  #image{
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+    display: inline;
+  }
+  
+ /* CSS styles for the document viewer */
+  #document-viewer {
+    width: 50%;
+    margin: auto;
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    overflow:auto;
+  }
+  
+  /* CSS styles for the document management */
+  #document-management {
+    width: 300px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  #document-management button {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #document-management button:hover {
+    background-color: #555;
+  }
+  
+  #document-management ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #document-management ul li {
+    margin-bottom: 5px;
+  } 
+  #controls{
+    padding: 5px;
+    display: block;
+    margin: 5px;
+  }
+  footer {
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  .page-info{
+    font-weight: bold;
+    padding: 10px;
+  }
+  .name{
+    display: inline;
+  }
